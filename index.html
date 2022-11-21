@@ -9,10 +9,16 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-secondary">
     <div id="app">
-        <main class="container">
-            <h1>Messaggio: {{message}}</h1>
+        <main class="container text-center fs-5">
+            <h1 :class="classiRiccardo">Messaggio: {{message}}</h1>
+            <input type="text" v-model="luogo">
+            <input class="ms-4" type="checkbox" v-model="scelto">
+            <div class="mt-4">
+                <img alt="" :src="immagine">
+            </div>
+            
         </main>
     </div>
     <script src="js/main.js"></script>
